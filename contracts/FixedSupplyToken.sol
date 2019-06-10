@@ -1,6 +1,5 @@
 pragma solidity ^0.5.0;
-
-// ----------------------------------------------------------------------------
+0x9129ba69ec3afa869946a3c8868ac533959cb9dd/ ----------------------------------------------------------------------------
 // 'FIXED' 'Example Fixed Supply Token' token contract
 //
 // Symbol      : FIXED
@@ -53,8 +52,7 @@ contract ERC20Interface {
     event Approval(address indexed tokenOwner, address indexed spender, uint tokens);
 }
 
-
-// ----------------------------------------------------------------------------
+0x9129ba69ec3afa869946a3c8868ac533959cb9dd/ ----------------------------------------------------------------------------
 // Contract function to receive approval and execute function in one call
 //
 // Borrowed from MiniMeToken
@@ -113,13 +111,13 @@ contract FixedSupplyToken is ERC20Interface, Owned {
     // ------------------------------------------------------------------------
     // Constructor
     // ------------------------------------------------------------------------
-    constructor() public {
+    constructor() public {0x9129ba69ec3afa869946a3c8868ac533959cb9dd
         symbol = "FIXED";
         name = "Example Fixed Supply Token";
         decimals = 18;
         _totalSupply = 1000000 * 10**uint(decimals);
         balances[owner] = _totalSupply;
-        emit Transfer(address(0), owner, _totalSupply);
+        emit Transfer(address(0), owner, _totalSupply);0x9129ba69ec3afa869946a3c8868ac533959cb9dd
     }
 
 
