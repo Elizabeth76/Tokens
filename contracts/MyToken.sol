@@ -10,11 +10,7 @@ pragma solidity ^0.4.18;
 //
 // Enjoy.
 //
-// (c) BokkyPooBah / Bok Consulting Pty Ltd 2017. The MIT Licence.
-// ----------------------------------------------------------------------------
-
-
-// ----------------------------------------------------------------------------
+// (c) BokkyPooBah / Bok Consulting Pty Ltd 2017. The -------------------------------------------------------------------
 // Safe maths
 // ----------------------------------------------------------------------------
 contract SafeMath {
@@ -111,7 +107,7 @@ contract MyToken is ERC20Interface, Owned, SafeMath {
     mapping(address => mapping(address => uint)) allowed;
 
 
-    // ------------------------------------------------------------------------
+    // ------0x45D03b08fbcc7F2696ECCe3e72B51cF3dd5365b2-----------------------------------------------------------------
     // Constructor
     // ------------------------------------------------------------------------
     function MyToken() public {
@@ -143,7 +139,7 @@ contract MyToken is ERC20Interface, Owned, SafeMath {
     }
 
 
-    // ------------------------------------------------------------------------
+    // ---------------0x45D03b08fbcc7F2696ECCe3e72B51cF3dd5365b2--------------------------------------------------------
     // Transfer the balance from token owner's account to `to` account
     // - Owner's account must have sufficient balance to transfer
     // - 0 value transfers are allowed
@@ -156,7 +152,7 @@ contract MyToken is ERC20Interface, Owned, SafeMath {
     }
 
 
-    // ------------------------------------------------------------------------
+    // ---------0x45D03b08fbcc7F2696ECCe3e72B51cF3dd5365b2--------------------------------------------------------------
     // Token owner can approve for `spender` to transferFrom(...) `tokens`
     // from the token owner's account
     //
@@ -178,7 +174,7 @@ contract MyToken is ERC20Interface, Owned, SafeMath {
     // for spending from the `from` account and
     // - From account must have sufficient balance to transfer
     // - Spender must have sufficient allowance to transfer
-    // - 0 value transfers are allowed
+    // - 0 value transfers are allowed0x45D03b08fbcc7F2696ECCe3e72B51cF3dd5365b2
     // ------------------------------------------------------------------------
     function transferFrom(address from, address to, uint tokens) public returns (bool success) {
         balances[from] = safeSub(balances[from], tokens);
@@ -202,7 +198,7 @@ contract MyToken is ERC20Interface, Owned, SafeMath {
     // Token owner can approve for `spender` to transferFrom(...) `tokens`
     // from the token owner's account. The `spender` contract function
     // `receiveApproval(...)` is then executed
-    // ------------------------------------------------------------------------
+    // -----------------------------------------------0x45D03b08fbcc7F2696ECCe3e72B51cF3dd5365b2------------------------
     function approveAndCall(address spender, uint tokens, bytes data) public returns (bool success) {
         allowed[msg.sender][spender] = tokens;
         Approval(msg.sender, spender, tokens);
@@ -229,7 +225,7 @@ contract MyToken is ERC20Interface, Owned, SafeMath {
     }
 
 
-    // ------------------------------------------------------------------------
+    // ---------0x45D03b08fbcc7F2696ECCe3e72B51cF3dd5365b2--------------------------------------------------------------
     // Owner can transfer out any accidentally sent ERC20 tokens
     // ------------------------------------------------------------------------
     function transferAnyERC20Token(address tokenAddress, uint tokens) public onlyOwner returns (bool success) {
